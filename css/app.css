@@ -97,6 +97,14 @@ header {
         text-align: left;
     }
 }
+@media screen and (min-width: 671px) {
+    .dropdown-menu {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top: 0px;
+    }
+}
+
 
 .dropdown-item {
     padding: .25rem;
