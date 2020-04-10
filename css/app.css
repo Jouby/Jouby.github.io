@@ -236,6 +236,7 @@ a.anchor {
 }
 .modal .modal-header {
     flex-wrap: wrap;
+    padding: 2rem 1rem 1rem 1rem;
 }
 .modal .modal-body {
     text-align: center;
@@ -244,11 +245,23 @@ a.anchor {
     max-width: initial;
     margin-bottom: 15px;
 }
-.modal-header {
-    padding: 2rem 1rem 1rem 1rem;
-}
 .modal-footer i {
     margin-left: 10px;
+}
+.modal .close {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    outline: none;
+}
+@media screen and (max-width: 670px) {
+    .modal .modal-header {
+        justify-content: center;
+    }
+    .modal .close {
+        display: block;
+    }
 }
 
 /*FOOTER*/
