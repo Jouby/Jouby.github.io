@@ -16,24 +16,47 @@
 		</div>
 		<a href="#profile" class="scroll-down page-scroll"><i class="fa fa-arrow-down"></i></a>
 	</header>
-	<nav class="navbar sticky-top navbar-light bg-light">
-	 	<a class="nav-item nav-link" href="#profile">Profil</a>
-		<!-- <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarMobile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Dropdown
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarMobile">
-				<a class="dropdown-item" href="#">Action</a>
-				<a class="dropdown-item" href="#">Another action</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">Something else here</a>
-	        </div>
-      	</li> -->
-	 <a class="nav-item nav-link" href="#mobile">Mobile</a>
-	 <a class="nav-item nav-link" href="#web">Web & E-commerce</a>
-	 <a class="nav-item nav-link" href="#realisations">Mes réalisations</a>
-	 <a class="nav-item nav-link" href="#contact">Contact</a>
-	</nav>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="#">Aurélien JOUBERT</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarToggler">
+    <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      	<a class="nav-link" href="#profile"><i class="fas fa-user"></i> Profil</a>
+      </li>
+      <li class="nav-item dropdown nav-item-mobile">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarMobile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        	<i class="fas fa-mobile-alt"></i> Mobile
+        </a>
+        <div class="dropdown-menu dropdown-menu-mobile" aria-labelledby="navbarMobile">
+			<a class="dropdown-item" href="#flutter"> Flutter</a>
+			<a class="dropdown-item" href="#responsive"> Responsive Design</a>
+			<!-- <div class="dropdown-divider"></div> -->
+			<a class="dropdown-item" href="#phonegap"> Phonegap</a>
+        </div>
+  	</li>
+<!--       <li class="nav-item">
+        <a class="nav-link" href="#mobile">Mobile</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#web"><i class="fas fa-desktop"></i> Web & E-commerce</a>
+      </li>
+<!--       <li class="nav-item">
+        <a class="nav-link" href="#web"><i class="fas fa-gamepad"></i> Game Dev</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#realisations"><i class="far fa-star"></i> Mes réalisations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact"><i class="far fa-envelope-open"></i> Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 	<div id="profile" class="paralax" style="background-image:url('./images/comedie.jpg');">
 		<h2 class="sub-title">PROFIL</h2>
 	</div>
@@ -41,20 +64,22 @@
 		<div class="row">
 			<div class="col-md-4">
 				<img class="profile-image" src="./images/me.jpg"/>
-				<p class="profile-icons"><i class="fas fa-id-card-alt"></i> 30 ans <i class="fas fa-map-marker-alt"></i> Montpellier</p>
+				<div class="row profile-icons">
+					<div class="col-6"><i class="fas fa-id-card-alt"></i> 30 ans</div>
+					<div class="col-6"><i class="fas fa-map-marker-alt"></i> Montpellier</div>
+					<div class="col-12"><i class="fas fa-award"></i> Ingénieur en Informatique et Gestion</div>
+				</div>
+
 			</div>
 			<div class="col-md-8 profile-text">
 				<p>
-					Développeur web depuis plus de 8 ans basé à Montpellier, j'ai réalisé de nombreux projets pour le besoin de mes clients. Que ce soit seul ou en équipe, j'ai travaillé pour de nombreux clients tels que Nestlé, Renault, Hermès, Snowleader, FunBooker, etc...
+					Développeur web depuis plus de 8 ans, j'ai réalisé de nombreux projets pour le besoin de mes clients. Que ce soit seul ou en équipe, j'ai travaillé pour de nombreux clients tels que Nestlé, Renault, Hermès, Snowleader, FunBooker, etc...
 				</p>
 				<p>
-					Une grande partie des utilisateurs naviguent sur le web à l'aide de leur téléphone, et une grande majorité de ces projets impliquaient de développer une version Responsive pour le mobile. J'ai donc aussi une bonne connaissance des contraintes (techinques, UI/UX) liées à la mise en place de version pour le mobile.
-					Fort d'acquérir de nouvelles connaissances, je me suis aussi auto-formé sur ces dernières années afin de créer des applications mobiles.
+					Etant donné que la plupart des utilisateurs naviguent sur le web via leur téléphone, une grande majorité de ces projets impliquaient de développer une version Responsive pour le mobile. J'ai donc aussi une bonne connaissance des contraintes (techniques, UI/UX) liées à la mise en place de version mobile. Toujours enclin à acquérir de nouvelles connaissances, je me suis en parallèle autoformé ces dernières années afin de créer des applications mobiles.
 				</p>
 				<p>
-					Je suis apte à comprendre vos besoins et être source de proposition pour mener à bien votre projet.
-					Je mets un point d'honneur à fournir un travail de qualité, pouvant être compris et repris par d'autres développeurs.
-					J'ai une très grande expérience web et mobile, je serai là pour vous accompagner sur ces sujets.
+					Je suis apte à comprendre vos besoins et serai source de proposition pour mener à bien votre projet. Je mets un point d'honneur à fournir un travail de qualité, pouvant être compris et repris par d'autres développeurs. Fort de ma très grande expérience web et mobile, je serai là pour vous accompagner sur ces sujets.
 				</p>
 			</div>
 		</div>
@@ -64,9 +89,12 @@
 	</div>
 	<section id="mobile-content" class="part">
 		<div class="card-deck">
+			<a class="anchor" id="flutter"></a>
 			<div class="card mb-4">
 		      	<div class="card-body">
-			        <h4 class="card-title"><img class="card-logo" src="./images/flutter.png"/></h4>
+			        <h4 class="card-title">
+			        	<img class="card-logo" src="./images/flutter.png"/>
+			        </h4>
 			        <p class="card-text">Le framework de Google permettant de concevoir des applications multiplateforme pour Android et iOS.</p>
 			    </div>
 			    <div class="card-footer text-muted">
@@ -76,6 +104,10 @@
 					    <li data-target="#flutterCarousel" data-slide-to="0" class="active"></li>
 					    <li data-target="#flutterCarousel" data-slide-to="1"></li>
 					  </ol>
+					  <a class="carousel-control-prev" href="#flutterCarousel" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
 					  <div class="carousel-inner">
 					    <div class="carousel-item active">
 					      <img class="d-block modal-link" src="./images/rea/price_comparator_big_picture.jpg" data-toggle="modal" data-target=".price-comparator-modal">
@@ -84,10 +116,15 @@
 					      <img class="d-block modal-link" src="./images/rea/resistance.jpg" data-toggle="modal" data-target=".resistance-modal">
 					    </div>
 					  </div>
+					  <a class="carousel-control-next" href="#flutterCarousel" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
 					</div>
 			  	</div>
 		  	</div>
 		  	<div class="w-100"></div>
+		  	<a class="anchor" id="responsive"></a>
 		  	<div class="card mb-4">
 		      	<div class="card-body">
 			        <h4 class="card-title">Responsive Web Design</h5>
@@ -97,6 +134,7 @@
 				 	<a href="#realisations" class="btn btn-primary">Voir mes réalisations</a>
 			  	</div>
 		  	</div>
+		  	<a class="anchor" id="phonegap"></a>
 		  	<div class="card mb-4">
 		      	<div class="card-body">
 			        <h4 class="card-title"><img class="card-logo" src="./images/phonegap2.png"/></h4>
@@ -129,6 +167,10 @@
 					    <li data-target="#symfonyCarousel" data-slide-to="0" class="active"></li>
 					    <li data-target="#symfonyCarousel" data-slide-to="1"></li>
 					  </ol>
+					  <a class="carousel-control-prev" href="#symfonyCarousel" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
 					  <div class="carousel-inner">
 					    <div class="carousel-item active">
 					      <img class="d-block modal-link" src="./images/rea/logo-funbooker.svg" data-toggle="modal" data-target=".funbooker-modal">
@@ -137,6 +179,10 @@
 					      <img class="d-block modal-link" src="./images/rea/renault.svg" data-toggle="modal" data-target=".renault-modal">
 					    </div>
 					  </div>
+					  <a class="carousel-control-next" href="#symfonyCarousel" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
 					</div>
 			  	</div>
 		  	</div>
@@ -171,7 +217,6 @@
 			        </p>
 		      	</div>
 		      	<div class="card-footer text-muted">
-		      		<a href="https://magento.com/"><i class="fas fa-link"></i></a>
 				 	<a href="#realisations" class="btn btn-primary">Voir mes réalisations</a>
 			  	</div>
 		  	</div>
@@ -295,7 +340,7 @@
 		        	<a href="https://www.funbooker.com/" target="_blank"><i class="fas fa-link"></i></a>
 		        </div>
 		  	</div>
-			<div class="w-100"><!-- wrap every 2 on sm--></div>
+			<div class="w-100"></div>
 		  	<div class="card mb-4">
 		      	<div class="card-body">
 		      		<h4 class="card-title">Snowleader</h4>
@@ -329,9 +374,42 @@
 		        	<a href="https://fr.special-t.com/fr/" target="_blank"><i class="fas fa-link"></i></a>
 		        </div>
 		  	</div>
+			<div class="w-100"></div>
+		  	<div class="card mb-4">
+		      	<div class="card-body">
+		      		<h4 class="card-title">Hermès</h4>
+		      		<div class="badges">
+			        	<span class="badge badge-secondary">TMA à gros budget</span>
+			        	<span class="badge badge-secondary">Magento 1</span>
+			        	<span class="badge badge-secondary">Client du luxe</span>
+			        </div>
+			        <p class="card-text">Un site marchand pour un grand client du luxe.</p>
+			        <img class="card-logo modal-link" src="./images/rea/hermes.png"/ data-toggle="modal" data-target=".hermes-modal"/>
+			    </div>
+			    <div class="card-footer text-muted">
+		        	<a href="https://www.hermes.com/fr/fr/" target="_blank"><i class="fas fa-link"></i></a>
+		        </div>
+		  	</div>
+		  	<div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+		  	<div class="card mb-4">
+		      	<div class="card-body">
+		      		<h4 class="card-title">Renault</h4>
+		      		<div class="badges">
+			        	<span class="badge badge-secondary">Web</span>
+			        	<span class="badge badge-secondary">Symfony</span>
+			        	<span class="badge badge-secondary">Référent technique</span>
+			        </div>
+			        <p class="card-text">La réalisation d'un devis en ligne.</p>
+			        <img class="card-logo modal-link" src="./images/rea/renault.jpg" data-toggle="modal" data-target=".renault-modal"/>
+			    </div>
+			    <div class="card-footer text-muted">
+		        	<a href="https://devis-en-ligne.renault.fr/" target="_blank"><i class="fas fa-link"></i></a>
+		        </div>
+		  	</div>
 		</div>
 	</section>
 
+	<!-- MODALS -->
 	<div class="modal fade price-comparator-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	  	<div class="modal-dialog modal-lg">
 		    <div class="modal-content">
@@ -344,9 +422,9 @@
 			        </div>
 		    	</div>
 		    	<div class="modal-body">
-				        <img class="card-logo" src="./images/rea/price_comparator_big_picture.jpg"/>
-				        <p class="card-text">Ce projet découle d'un besoin personnel. Mettant mis à la consommation d'aliments en vrac, je me suis intéressé au prix de ces derniers. Les prix fluctueux énormément entre les différents magasins, et comme c'était des nouveaux produits pour moi, il m'était impossible de définir si les prix pratiqués par un magasin été cher ou non.</p>
-				        <p class="card-text">L'application permet de renseigner la liste de vos magasins courants, ainsi qu'une liste d'aliments. A partir de là, vous pouvez renseigner un prix par magasin et par aliment, ce qui vous permet de connaitre le prix minimum appliqué par vos magasins pour un aliment donné. Ainsi quand on se retrouve devant le rayon d'aliment en vrac d'un magasin, on peut savoir si les prix sont chers ou non.</p>
+			        <img class="card-logo" src="./images/rea/price_comparator_big_picture.jpg"/>
+			        <p class="card-text">Ce projet découle d'un besoin personnel. Ayant changé mes habitudes en m'étant mis à l'achat au vrac pour les produits alimentaires, il m'était impossible de définir si les prix pratiqués par chaque magasin étaient chers ou non. En effet, les prix sur ce type de produits varient énormément d'un magasin à l'autre.</p>
+			        <p class="card-text">L'application permet de rentrer la liste de vos magasins habituels, ainsi que la liste des aliments que vous avez l'habitude d'acheter. A partir de là, vous pouvez renseigner un prix par aliment et par magasin, ce qui vous permet de connaître le prix minimum appliqué sur l'ensemble de vos magasins pour un aliment donné. Ainsi, quand vous vous retrouvez devant le rayon de produits en vrac d'un magasin, vous pouvez facilement savoir si les prix y sont chers ou non.</p>
 		    	</div>
 		    	<div class="modal-footer">Disponible sur Google Play  <a href="https://play.google.com/store/apps/details?id=the_dead_masked_company.price_comparator" target="_blank"><i class="fab fa-google-play"></i></a></div>
 		    </div>
@@ -365,8 +443,8 @@
 		    	</div>
 		    	<div class="modal-body">
 				        <img class="card-logo" src="./images/rea/resistance.jpg"/>
-				        <!-- <p class="card-text">Ce projet découle d'un besoin personnel. Mettant mis à la consommation d'aliments en vrac, je me suis intéressé au prix de ces derniers. Les prix fluctueux énormément entre les différents magasins, et comme c'était des nouveaux produits pour moi, il m'était impossible de définir si les prix pratiqués par un magasin été cher ou non.</p>
-				        <p class="card-text">L'application permet de renseigner la liste de vos magasins courants, ainsi qu'une liste d'aliments. A partir de là, vous pouvez renseigner un prix par magasin et par aliment, ce qui vous permet de connaitre le prix minimum appliqué par vos magasins pour un aliment donné. Ainsi quand on se retrouve devant le rayon d'aliment en vrac d'un magasin, on peut savoir si les prix sont chers ou non.</p> -->
+				        <p class="card-text">Voulant développer mes compétences en Flutter, j'ai voulu adapter un de mes jeux de société favori pour en faire une application mobile.</p>
+				        <p class="card-text">The Resistance est un jeu de société paru en 2010. Une partie peut se jouer de 5 à 10 joueurs et dure environ 20 minutes. L'application reprend l'ensemble des règles et étapes du jeu original. L'application doit simplement être installée sur un téléphone, les joueurs se passeront le téléphone en fonction des étapes et de leurs actions.</p>
 		    	</div>
 		    <!-- 	<div class="modal-footer">Disponible sur Google Play : <a href="https://play.google.com/store/apps/details?id=the_dead_masked_company.price_comparator"><i class="fab fa-google-play"></i></a></div> -->
 		    </div>
@@ -385,8 +463,8 @@
 		    	</div>
 		    	<div class="modal-body">
 				        <img class="card-logo" src="./images/rea/logo-funbooker.svg"/>
-				        <!-- <p class="card-text">Ce projet découle d'un besoin personnel. Mettant mis à la consommation d'aliments en vrac, je me suis intéressé au prix de ces derniers. Les prix fluctueux énormément entre les différents magasins, et comme c'était des nouveaux produits pour moi, il m'était impossible de définir si les prix pratiqués par un magasin été cher ou non.</p>
-				        <p class="card-text">L'application permet de renseigner la liste de vos magasins courants, ainsi qu'une liste d'aliments. A partir de là, vous pouvez renseigner un prix par magasin et par aliment, ce qui vous permet de connaitre le prix minimum appliqué par vos magasins pour un aliment donné. Ainsi quand on se retrouve devant le rayon d'aliment en vrac d'un magasin, on peut savoir si les prix sont chers ou non.</p> -->
+				        <p class="card-text">J'ai participé à la création d'une marketplace proposant des expériences et activités de loisirs. FunBooker propose différentes activités selon le thème, votre géolocalisation, votre âge, etc...</p>
+						<p class="card-text">Etant référent technique sur ce projet, j'ai accompagné et conseillé le client tout au long du projet. J'étais aussi en charge de l'encadrement de l'équipe de développement. Les grands challenge technique ont été notamment au niveau de l'indexation des données, la géolocalisation, la mise en place d'un tunnel de vente ou encore la gestion des comptes clients.</p>
 		    	</div>
 		    	<div class="modal-footer">Disponible : <a href="https://www.funbooker.com/fr/" target="_blank"><i class="fas fa-link"></i></a></div>
 		    </div>
@@ -405,10 +483,30 @@
 		    	</div>
 		    	<div class="modal-body">
 				        <img class="card-logo" src="./images/rea/renault.svg"/>
-				        <!-- <p class="card-text">Ce projet découle d'un besoin personnel. Mettant mis à la consommation d'aliments en vrac, je me suis intéressé au prix de ces derniers. Les prix fluctueux énormément entre les différents magasins, et comme c'était des nouveaux produits pour moi, il m'était impossible de définir si les prix pratiqués par un magasin été cher ou non.</p>
-				        <p class="card-text">L'application permet de renseigner la liste de vos magasins courants, ainsi qu'une liste d'aliments. A partir de là, vous pouvez renseigner un prix par magasin et par aliment, ce qui vous permet de connaitre le prix minimum appliqué par vos magasins pour un aliment donné. Ainsi quand on se retrouve devant le rayon d'aliment en vrac d'un magasin, on peut savoir si les prix sont chers ou non.</p> -->
+				        <p class="card-text">La principale mission a été la réalisation d'un formulaire complexe en plusieurs étapes afin de réaliser un devis en ligne. En fonction, de l'immatriculation ou du type de véhicule, de la panne ou révision souhaitée, le devis en ligne proposait différentes formules pour répondre aux besoins des clients.</p>
+				        <p class="card-text">Référent technique sur le projet, et en association avec le chef de projet, j'ai encadré l'équipe et répondu aux besoins clients.</p>
 		    	</div>
 		    	<div class="modal-footer">Disponible : <a href="https://devis-en-ligne.renault.fr/" target="_blank"><i class="fas fa-link"></i></a></div>
+		    </div>
+	  	</div>
+	</div>
+		<div class="modal fade hermes-modal" tabindex="-1" role="dialog" aria-hidden="true">
+	  	<div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<h3 class="card-title">Hermès</h3>
+		      		<div class="badges">
+			        	<span class="badge badge-secondary">TMA à gros budget</span>
+			        	<span class="badge badge-secondary">Magento 1</span>
+			        	<span class="badge badge-secondary">Equipe de plus de 10 personnes</span>
+			        </div>
+		    	</div>
+		    	<div class="modal-body">
+			        <img class="card-logo" src="./images/rea/hermes.png"/>
+			        <p class="card-text">Une TMA pour un grand client du luxe.</p>
+			        <p class="card-text">Faisant partie d'une équipe projet d'une dizaine de personnes, j'ai participé à la maintenance et à l'ajout de nouvelles fonctionnalités du site de la marque Hermès pendant plus d'un an et demi.</p>
+		    	</div>
+		    	<div class="modal-footer">Lien : <a href="https://www.hermes.com/fr/fr/" target="_blank"><i class="fas fa-link"></i></a></div>
 		    </div>
 	  	</div>
 	</div>
@@ -416,16 +514,19 @@
 	<footer id="contact" class="part">
 		<h2>Contact</h2>
 		<div class="links row">
-			<div class="col-3">
+			<div class="offset-1 col-2">
 				<a href="https://gitlab.com/Jouby" target="_blank"><i class="fab fa-gitlab"></i></a>
 			</div>
-			<div class="col-3">
+			<div class="col-2">
+				<a href="https://github.com/Jouby" target="_blank"><i class="fab fa-github"></i></a>
+			</div>
+			<div class="col-2">
 				<a href="https://stackoverflow.com/users/7761484/jouby?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a>
 			</div>
-			<div class="col-3">
+			<div class="col-2">
 				<a href="https://www.linkedin.com/in/aurelien-joubert-freelance/" target="_blank"><i class="fab fa-linkedin"></i></a>
 			</div>
-			<div class="col-3">
+			<div class="col-2">
 				<a href="mailto:aure.joubert@gmail.com"><i class="far fa-envelope-open"></i></a>
 			</div>
 		</div>
@@ -433,5 +534,23 @@
 	</footer>
 	<script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('.dropdown').on('show.bs.dropdown', function(){
+		  	$(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+		});
+		$('.dropdown').on('hide.bs.dropdown', function(){
+			// Only on desktop
+			if (!$('.navbar-toggler').is(':visible')) {
+		  		$(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
+			}
+		});
+		$('.navbar-nav li a').on('click', function(){
+		    if(!$( this ).hasClass('dropdown-toggle')){
+		    	setTimeout(function() { // set timeout to avoid conflict between collapse and scroll
+		    		$('.navbar-collapse').collapse('hide');
+		    	}, 800);
+		    }
+		});
+	</script>
 </body>
 </html>

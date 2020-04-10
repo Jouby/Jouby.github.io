@@ -75,6 +75,53 @@ header {
     animation-direction: normal;
 }
 
+/*NAVBAR*/
+@media (min-width: 992px) {
+    .navbar-nav .nav-link i {
+        display: block;
+        text-align: center;
+        margin: 2px auto 4px auto;
+    }
+}
+.nav-item {
+    padding: 0 20px;
+}
+.dropdown-menu {
+    font-size: 0.8rem;
+    text-align: center;
+}
+@media screen and (max-width: 670px) {
+    .dropdown-menu {
+        border: none;
+        background-color: transparent;
+        text-align: left;
+    }
+}
+
+.dropdown-item {
+    padding: .25rem;
+}
+.nav-item-mobile {
+    width: 130px;
+}
+.dropdown-menu-mobile {
+    width: 130px;
+    min-width: 130px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -90px;
+    height: 1px;
+}
+@media screen and (max-width: 670px) {
+    a.anchor {
+        top: -70px;
+    }
+}
+
+
 /*GENERAL BODY PART*/
 .part {
     text-align: center;
@@ -117,8 +164,10 @@ header {
     padding: 0;
 }
 .profile-icons {
-    width: 200px;
-    margin: 10px auto;
+    margin: 10px auto 30px;
+}
+.profile-icons i {
+    color: #48497d;
 }
 .profile-text {
 	text-align: left;
@@ -132,6 +181,22 @@ header {
 	width: 100%;
     max-width: 500px;
 }
+.card .badges {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.badge {
+    margin: 0 2px;
+    padding: .4em .4em .15em .4em;
+    line-height: 1.2;
+}
+
+/*CAROUSEL*/
+.carousel {
+    display: flex;
+    align-items: center;
+}
 .carousel .carousel-item img {
   max-height: 50vh;
   min-width: auto;
@@ -144,19 +209,33 @@ header {
 .carousel-indicators li.active {
     background-color: #a0a0a0;
 }
-.card .badges {
-    border-bottom: 1px solid rgba(0,0,0,.125);
-    padding-bottom: 10px;
+.carousel-control-next,
+.carousel-control-prev {
+    width: 50px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #e0e0e0;
+    border-radius: 25%;
+    position: unset;
 }
-.badge {
-	margin: 0 2px;
-    padding: .4em .4em .15em .4em;
-    line-height: 1.2;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
 }
+@media screen and (max-width: 670px) {
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
+}
+
 
 /*MODAL*/
 .modal-link {
     cursor: pointer;
+}
+.modal .modal-header {
+    flex-wrap: wrap;
 }
 .modal .modal-body {
     text-align: center;
@@ -188,9 +267,6 @@ footer .links {
 	font-size: 2.5rem;
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
-}
-footer .links .fa-gitlab {
-    margin-top: 8px;
 }
 footer .copyright {
     font-size: 0.8em;
