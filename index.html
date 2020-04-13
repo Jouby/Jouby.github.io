@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-top">
 	<header style="background-image:url('./images/antelope.jpg');">
 		<div class="header-content">
 			<div class="header-content-title">
@@ -20,14 +20,13 @@
 		<a href="#profile" class="scroll-down page-scroll"><i class="fa fa-arrow-down"></i></a>
 	</header>
 
-	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+	<nav id="navbar-top" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="#">Aurélien JOUBERT</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
 			aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarToggler">
-			<!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
 					<a class="nav-link" href="#profile"><i class="fas fa-user"></i> Profil</a>
@@ -43,14 +42,26 @@
 						<a class="dropdown-item" href="#phonegap"> Phonegap</a>
 					</div>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#web"><i class="fas fa-desktop"></i> Web & E-commerce</a>
+				<li class="nav-item dropdown nav-item-web">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarMobile" role="button" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-desktop"></i> Web & E-commerce
+					</a>
+					<div class="dropdown-menu dropdown-menu-web" aria-labelledby="navbarMobile">
+						<a class="dropdown-item" href="#symfony"> Symfony</a>
+						<a class="dropdown-item" href="#integration"> Intégration Frontend</a>
+						<a class="dropdown-item" href="#magento"> Magento</a>
+						<a class="dropdown-item" href="#bdd"> Base de données</a>
+						<a class="dropdown-item" href="#versioning"> Version et dépendances</a>
+						<a class="dropdown-item" href="#reporting"> Reporting et Intégration continue</a>
+						<a class="dropdown-item" href="#performances"> Analyse des performances</a>
+					</div>
 				</li>
 				<!--       <li class="nav-item">
         <a class="nav-link" href="#web"><i class="fas fa-gamepad"></i> Game Dev</a>
       </li> -->
 				<li class="nav-item">
-					<a class="nav-link" href="#realisations"><i class="far fa-star"></i> Mes réalisations</a>
+					<a class="nav-link nav-link-realisations" href="#realisations"><i class="far fa-star"></i> Mes réalisations</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#contact"><i class="far fa-envelope-open"></i> Contact</a>
@@ -105,8 +116,7 @@
 					<h4 class="card-title">
 						<img class="card-logo" src="./images/flutter.png" />
 					</h4>
-					<p class="card-text">Le framework de Google permettant de concevoir des applications multiplateforme
-						pour Android et iOS.</p>
+					<p class="card-text">Framework de Google permettant de concevoir des applications multiplateforme pour Android et iOS.</p>
 				</div>
 				<div class="card-footer text-muted">
 					<h5 class="card-title">Mes réalisations</h5>
@@ -141,9 +151,7 @@
 			<div class="card mb-4">
 				<div class="card-body">
 					<h4 class="card-title">Responsive Web Design</h5>
-						<p class="card-text">Une approche de conception Web qui vise à l'élaboration de sites offrant
-							une expérience de lecture et de navigation optimales pour l'utilisateur quelle que soit sa
-							gamme d'appareil.</p>
+						<p class="card-text">Conception Web qui vise à l'élaboration de sites avec une expérience optimale de lecture et de navigation pour l'utilisateur quelle que soit sa gamme d'appareil.</p>
 				</div>
 				<div class="card-footer text-muted">
 					<a href="#realisations" class="btn btn-primary">Voir mes réalisations</a>
@@ -153,8 +161,7 @@
 			<div class="card mb-4">
 				<div class="card-body">
 					<h4 class="card-title"><img class="card-logo" src="./images/phonegap2.png" /></h4>
-					<p class="card-text">Le framework qui permet à partir de languages web (HTML/CSS/JS) la création
-						d'applications mobiles hybrides.</p>
+					<p class="card-text">Framework qui permet à partir de languages web (HTML/CSS/JS) la création d'applications mobiles hybrides.</p>
 				</div>
 				<div class="card-footer text-muted">
 					<a href="#realisations" class="btn btn-primary">Voir mes réalisations</a>
@@ -168,6 +175,7 @@
 	</div>
 	<section id="web-content" class="part">
 		<div class="card-deck">
+			<a class="anchor" id="symfony"></a>
 			<div class="card mb-4">
 				<div class="card-body">
 					<!-- <h5 class="card-title">Symfony</h5> -->
@@ -208,6 +216,7 @@
 				</div>
 			</div>
 			<div class="w-100"></div>
+			<a class="anchor" id="integration"></a>
 			<div class="card mb-4">
 				<div class="card-body">
 					<h4 class="card-title"><img class="card-logo" src="./images/integration.png" /></h4>
@@ -231,6 +240,7 @@
 			<div class="w-100">
 				<!-- wrap every 2 on sm-->
 			</div>
+			<a class="anchor" id="magento"></a>
 			<div class="card mb-4">
 				<div class="card-body">
 					<h4 class="card-title"><img class="card-logo" src="./images/magento.png" /></h4>
@@ -246,6 +256,7 @@
 					<a href="#realisations" class="btn btn-primary">Voir mes réalisations</a>
 				</div>
 			</div>
+			<a class="anchor" id="bdd"></a>
 			<div class="card mb-4">
 				<div class="card-body">
 					<h4 class="card-title"><img class="card-logo" src="./images/database.png" /></h4>
@@ -263,6 +274,7 @@
 			<div class="w-100 d-none d-sm-block d-md-none">
 				<!-- wrap every 2 on sm-->
 			</div>
+			<a class="anchor" id="versioning"></a>
 			<div class="card mb-4">
 				<div class="card-body">
 					<h4 class="card-title"><img class="card-logo" src="./images/git.png" /></h4>
@@ -282,6 +294,7 @@
 			<div class="w-100 d-none d-md-block d-lg-none">
 				<!-- wrap every 3 on md-->
 			</div>
+			<a class="anchor" id="reporting"></a>
 			<div class="card mb-4">
 				<div class="card-body">
 					<h4 class="card-title"><img class="card-logo" src="./images/reporting.png" /></h4>
@@ -305,6 +318,7 @@
 			<div class="w-100 d-none d-lg-block d-xl-none">
 				<!-- wrap every 4 on lg-->
 			</div>
+			<a class="anchor" id="performances"></a>
 			<div class="card mb-4">
 				<div class="card-body">
 					<h4 class="card-title"><img class="card-logo" src="./images/performances.png" /></h4>
@@ -351,12 +365,10 @@
 					</div>
 					<p class="card-text">Une application mobile de comparaison de prix.</p>
 
-					<img class="card-logo modal-link" src="./images/rea/price_comparator_big_picture.jpg"
-						data-toggle="modal" data-target=".price-comparator-modal" />
+					<img class="card-logo modal-link" src="./images/rea/price_comparator_big_picture.jpg" data-toggle="modal" data-target=".price-comparator-modal" />
 				</div>
 				<div class="card-footer text-muted">
-					<a href="https://play.google.com/store/apps/details?id=the_dead_masked_company.price_comparator"
-						target="_blank"><i class="fab fa-google-play"></i></a>
+					<a href="https://play.google.com/store/apps/details?id=the_dead_masked_company.price_comparator" target="_blank"><i class="fab fa-google-play"></i></a>
 				</div>
 			</div>
 			<div class="w-100 d-none d-sm-block d-md-none">
@@ -371,8 +383,7 @@
 						<span class="badge badge-secondary">Symfony</span>
 					</div>
 					<p class="card-text">Une marketplace d'évènements et anniversaires.</p>
-					<img class="card-logo" src="./images/rea/logo-funbooker.svg" />
-
+					<img class="card-logo modal-link" src="./images/rea/logo-funbooker.svg" data-toggle="modal" data-target=".funbooker-modal" />
 				</div>
 				<div class="card-footer text-muted">
 					<a href="https://www.funbooker.com/" target="_blank"><i class="fas fa-link"></i></a>
@@ -389,7 +400,6 @@
 					</div>
 					<p class="card-text">Un site marchand de sport d'hiver et spécialiste du reblochon.</p>
 					<img class="card-logo" src="./images/rea/snowleader.jpg" />
-
 				</div>
 				<div class="card-footer text-muted">
 					<a href="https://www.snowleader.com/" target="_blank"><i class="fas fa-link"></i></a>
@@ -407,7 +417,7 @@
 						<span class="badge badge-secondary">Migration de données</span>
 					</div>
 					<p class="card-text">Un site de vente de thés, machines et accessoires.</p>
-					<img class="card-logo" src="./images/rea/spt.jpg" />
+					<img class="card-logo modal-link" src="./images/rea/spt.jpg" data-toggle="modal" data-target=".specialt-modal" />
 
 				</div>
 				<div class="card-footer text-muted">
@@ -424,8 +434,7 @@
 						<span class="badge badge-secondary">Client du luxe</span>
 					</div>
 					<p class="card-text">Un site marchand pour un grand client du luxe.</p>
-					<img class="card-logo modal-link" src="./images/rea/hermes.png" / data-toggle="modal"
-						data-target=".hermes-modal" />
+					<img class="card-logo modal-link" src="./images/rea/hermes.png" data-toggle="modal" data-target=".hermes-modal" />
 				</div>
 				<div class="card-footer text-muted">
 					<a href="https://www.hermes.com/fr/fr/" target="_blank"><i class="fas fa-link"></i></a>
@@ -448,6 +457,40 @@
 				</div>
 				<div class="card-footer text-muted">
 					<a href="https://devis-en-ligne.renault.fr/" target="_blank"><i class="fas fa-link"></i></a>
+				</div>
+			</div>
+			<div class="w-100"></div>
+			<div class="card mb-4">
+				<div class="card-body">
+					<h4 class="card-title">Amédée Paris</h4>
+					<div class="badges">
+						<span class="badge badge-secondary">Responsable technique</span>
+						<span class="badge badge-secondary">Magento 2</span>
+						<span class="badge badge-secondary">TMA</span>
+					</div>
+					<p class="card-text">Responsable technique de la maintenance du site.</p>
+					<img class="card-logo modal-link" src="./images/rea/amedee.jpg" data-toggle="modal" data-target=".amedee-modal" />
+				</div>
+				<div class="card-footer text-muted">
+					<a href="https://www.amedeeparis.com/" target="_blank"><i class="fas fa-link"></i></a>
+				</div>
+			</div>
+			<div class="w-100 d-none d-sm-block d-md-none">
+				<!-- wrap every 2 on sm-->
+			</div>
+			<div class="card mb-4">
+				<div class="card-body">
+					<h4 class="card-title">Lancaster</h4>
+					<div class="badges">
+						<span class="badge badge-secondary">Web</span>
+						<span class="badge badge-secondary">Magento 2</span>
+						<span class="badge badge-secondary">Client du luxe</span>
+					</div>
+					<p class="card-text">Un site marchand pour un client du luxe.</p>
+					<img class="card-logo modal-link" src="./images/rea/lancaster.png" data-toggle="modal" data-target=".lancaster-modal" />
+				</div>
+				<div class="card-footer text-muted">
+					<a href="https://www.lancaster.com/" target="_blank"><i class="fas fa-link"></i></a>
 				</div>
 			</div>
 		</div>
@@ -497,17 +540,16 @@
 						<span class="badge badge-secondary">Flutter</span>
 						<span class="badge badge-secondary">Projet personnel</span>
 					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</div>
 				<div class="modal-body">
 					<img class="card-logo" src="./images/rea/resistance.jpg" />
-					<p class="card-text">Voulant développer mes compétences en Flutter, j'ai voulu adapter un de mes
-						jeux de société favori pour en faire une application mobile.</p>
-					<p class="card-text">The Resistance est un jeu de société paru en 2010. Une partie peut se jouer de
-						5 à 10 joueurs et dure environ 20 minutes. L'application reprend l'ensemble des règles et étapes
-						du jeu original. L'application doit simplement être installée sur un téléphone, les joueurs se
-						passeront le téléphone en fonction des étapes et de leurs actions.</p>
+					<p class="card-text">Voulant développer mes compétences en Flutter, j'ai adapté un de mes jeux de société favori pour en faire une application mobile.</p>
+					<p class="card-text">The Resistance est un jeu de société paru en 2010. Une partie peut se jouer de 5 à 10 joueurs et dure environ 20 minutes. Mon application reprend l'ensemble des règles et étapes du jeu original. Elle est à installer sur mobile, les joueurs se passeront alors le téléphone en fonction des étapes et de leurs actions.</p>
 				</div>
-				<!-- 	<div class="modal-footer">Disponible sur Google Play : <a href="https://play.google.com/store/apps/details?id=the_dead_masked_company.price_comparator"><i class="fab fa-google-play"></i></a></div> -->
+					<div class="modal-footer">Bientot disponible</div>
 			</div>
 		</div>
 	</div>
@@ -521,6 +563,9 @@
 						<span class="badge badge-secondary">Symfony</span>
 						<span class="badge badge-secondary">Lead Development</span>
 					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</div>
 				<div class="modal-body">
 					<img class="card-logo" src="./images/rea/logo-funbooker.svg" />
@@ -548,6 +593,9 @@
 						<span class="badge badge-secondary">Symfony</span>
 						<span class="badge badge-secondary">Référent technique</span>
 					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</div>
 				<div class="modal-body">
 					<img class="card-logo" src="./images/rea/renault.svg" />
@@ -573,6 +621,9 @@
 						<span class="badge badge-secondary">Magento 1</span>
 						<span class="badge badge-secondary">Equipe de plus de 10 personnes</span>
 					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</div>
 				<div class="modal-body">
 					<img class="card-logo" src="./images/rea/hermes.png" />
@@ -582,6 +633,30 @@
 						plus d'un an et demi.</p>
 				</div>
 				<div class="modal-footer">Lien : <a href="https://www.hermes.com/fr/fr/" target="_blank"><i
+							class="fas fa-link"></i></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade specialt-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="card-title">Special T</h3>
+					<div class="badges">
+						<span class="badge badge-secondary">Migration de données</span>
+						<span class="badge badge-secondary">Magento 2</span>
+						<span class="badge badge-secondary">Lead Developer</span>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="card-logo" src="./images/rea/spt.jpg" />
+					<p class="card-text">En tant que Lead Developer en charge de la migration du site de Magento 1 vers Magento 2, j'ai apporté mon expertise et encadré l'équipe de développement. Dans le cadre de ce projet, j'ai notamment réalisé des tests unitaires sur l'ensemble de mes travaux et j'ai utilisé une intégration continue pour les tests fonctionnels et livraison.</p>
+					<p class="card-text">L'un des principales enjeu de ce projet a été la migration des données. Dans le cadre de ce projet, nous avons aussi effectué une mise à jour graphique du site.</p>
+				</div>
+				<div class="modal-footer">Lien : <a href="https://fr.special-t.com/fr/" target="_blank"><i
 							class="fas fa-link"></i></a></div>
 			</div>
 		</div>
@@ -613,21 +688,21 @@
 	<script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script type="text/javascript">
+		var avoidHide = false;
 		$('.dropdown').on('show.bs.dropdown', function () {
 			$(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
 		});
-		$('.dropdown').on('hide.bs.dropdown', function () {
-			// Only on desktop
-			if (!$('.navbar-toggler').is(':visible')) {
-				$(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
-			}
+		$('.dropdown-item').on('click', function(){
+			console.log('click');
+			avoidHide = true;
 		});
-		$('.navbar-nav li a').on('click', function () {
-			if (!$(this).hasClass('dropdown-toggle')) {
-				setTimeout(function () { // set timeout to avoid conflict between collapse and scroll
-					$('.navbar-collapse').collapse('hide');
-				}, 800);
+		$('.dropdown').on('hide.bs.dropdown', function (e) {
+			if (!avoidHide) {
+				$(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
+			} else {
+				avoidHide = false;
 			}
+			
 		});
 	</script>
 </body>

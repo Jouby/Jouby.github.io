@@ -22,6 +22,9 @@ ul {
 a {
 	color: #000;
 }
+button:focus {
+    outline: none !important;
+}
 
 /*HEADER*/
 header {
@@ -76,6 +79,9 @@ header {
 }
 
 /*NAVBAR*/
+#navbar-top {
+    border-bottom: 1px solid #e0e0e0;
+}
 @media (min-width: 992px) {
     .navbar-nav .nav-link i {
         display: block;
@@ -104,30 +110,47 @@ header {
         border-top: 0px;
     }
 }
-
-
 .dropdown-item {
     padding: .25rem;
 }
+.dropdown-item.active {
+    background-color: #e0e0e0;
+}
 .nav-item-mobile {
     width: 130px;
+}
+.nav-item-mobile .dropdown-toggle {
+    width: 90px;
 }
 .dropdown-menu-mobile {
     width: 130px;
     min-width: 130px;
 }
+.nav-item-web {
+    width: 240px;
+}
+.nav-item-web .dropdown-toggle {
+    width: 205px;
+}
+.dropdown-menu-web {
+    width: 240px;
+    min-width: 240px;
+}
+.nav-link.nav-link-realisations {
+    width: 155px;
+}
 
 a.anchor {
     display: block;
     position: relative;
-    top: -90px;
+    top: -80px;
     height: 1px;
 }
-@media screen and (max-width: 670px) {
+/* @media screen and (max-width: 670px) {
     a.anchor {
         top: -70px;
     }
-}
+} */
 
 
 /*GENERAL BODY PART*/
