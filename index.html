@@ -688,22 +688,26 @@
 	<script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		var avoidHide = false;
 		$('.dropdown').on('show.bs.dropdown', function () {
 			$(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
 		});
-		$('.dropdown-item').on('click', function(){
-			console.log('click');
-			avoidHide = true;
+		$('.dropdown-item').on('click', function(e){
+			if ($('.navbar-toggler').is(':visible')) { // Only on mobile
+				e.stopPropagation();
+			}
 		});
 		$('.dropdown').on('hide.bs.dropdown', function (e) {
-			if (!avoidHide) {
-				$(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
-			} else {
-				avoidHide = false;
-			}
-			
+			$(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
 		});
+
+		// $('body').on('click', function (e) {
+		// 	if (!$('li.dropdown.mega-dropdown').is(e.target) 
+		// 		&& $('li.dropdown.mega-dropdown').has(e.target).length === 0 
+		// 		&& $('.open').has(e.target).length === 0
+		// 	) {
+		// 		$('li.dropdown.mega-dropdown').removeClass('open');
+		// 	}
+		// });
 	</script>
 </body>
 
