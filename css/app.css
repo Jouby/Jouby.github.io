@@ -1,4 +1,12 @@
 @keyframes wiggle{0%{padding-top:20px}50%{padding-top:28px}to{padding-top:20px}}
+@keyframes bounceright {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(3px);
+    }
+  }
 @font-face {
     font-family: "Spartan";
     src: url('./fonts/Spartan-VariableFont_wght.ttf');
@@ -25,6 +33,60 @@ a {
 button:focus {
     outline: none !important;
 }
+
+.button {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    padding: 0.8em 1.4em;
+    padding-right: 4.7em;
+    max-width: 250px;
+    margin: auto;
+    background: #009ed8;
+    border: none;
+    border-radius: 5px;
+    color: white !important;
+    text-decoration: none !important;
+    transition: 0.2s;
+  }
+  .button:before,
+  .button:after {
+    position: absolute;
+    right: 0;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    width: 2.8em;
+    content: "\00a0";
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    transition: 0.2s;
+    transform-origin: 50% 60%;
+  }
+  .button:before {
+    background: rgba(0, 0, 0, 0.1);
+    top: 0;
+    bottom: 0;
+  }
+  .button:hover {
+    background: #0079a5;
+  }
+  .button:active,
+  .button:focus {
+    background: #002e3f;
+    outline: none;
+  }
+
+  .arrow:after {
+    font-weight: 900;
+    content: "\f105";
+  }
+  .arrow:hover:after {
+    -webkit-animation: bounceright 0.3s alternate ease infinite;
+    animation: bounceright 0.3s alternate ease infinite;
+  }
 
 /*HEADER*/
 header {
