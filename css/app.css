@@ -284,6 +284,13 @@ a.anchor {
     padding: .4em .4em .15em .4em;
     line-height: 1.2;
 }
+.card-footer:not(.card-footer-carousel) {
+    display: flex;
+    justify-content: center;
+}
+.card-footer a {
+    margin: 0 5px;
+}
 
 /*CAROUSEL*/
 .carousel {
@@ -337,6 +344,9 @@ a.anchor {
 .modal .card-logo {
     max-width: initial;
     margin-bottom: 15px;
+}
+.modal .quote-symbol {
+    margin-right: 10px;
 }
 .modal-footer i {
     margin-left: 10px;
