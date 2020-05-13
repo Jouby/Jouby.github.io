@@ -270,6 +270,9 @@ a.anchor {
 }
 
 /*CARD*/
+.modal-body > img:first-of-type {
+    margin-bottom: 20px;
+}
 .img-fluid {
     max-width: 500px;
     width: 100%;
