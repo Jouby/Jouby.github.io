@@ -270,9 +270,12 @@ a.anchor {
 }
 
 /*CARD*/
-.card-logo {
-	width: 100%;
+.img-fluid {
     max-width: 500px;
+    width: 100%;
+}
+.figure-img {
+    border: 1px solid #a0a0a0;
 }
 .card .badges {
     border-bottom: 1px solid rgba(0,0,0,.125);
