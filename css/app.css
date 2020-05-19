@@ -262,6 +262,12 @@ a.anchor {
 .profile-icons i {
     color: #48497d;
 }
+.profile-age {
+    text-align: end;
+}
+.profile-location {
+    text-align: start;
+}
 .profile-text {
 	text-align: left;
 }
