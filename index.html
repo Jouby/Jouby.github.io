@@ -78,7 +78,7 @@
 			<div class="col-md-4">
 				<img class="profile-image" src="./images/me.jpg" />
 				<div class="row profile-icons">
-					<div class="col-6 profile-age"><i class="fas fa-id-card-alt"></i> 30 ans</div>
+					<div class="col-6 profile-age"><i class="fas fa-id-card-alt"></i> <span class="age"></span> ans</div>
 					<div class="col-6 profile-location"><i class="fas fa-map-marker-alt"></i> Montpellier</div>
 					<div class="col-12"><i class="fas fa-award"></i> Ingénieur en Informatique et Gestion</div>
 				</div>
@@ -1149,7 +1149,7 @@
 				<a href="mailto:aure.joubert@gmail.com"><i class="far fa-envelope-open"></i></a>
 			</div>
 		</div>
-		<div class="copyright">Aurélien JOUBERT © 2020</div>
+		<div class="copyright">Aurélien JOUBERT © <span class="date"></span></div>
 	</footer>
 	<script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
@@ -1165,15 +1165,19 @@
 		$('.dropdown').on('hide.bs.dropdown', function (e) {
 			$(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
 		});
+		$('.copyright .date').text(new Date().getFullYear());
 
-		// $('body').on('click', function (e) {
-		// 	if (!$('li.dropdown.mega-dropdown').is(e.target) 
-		// 		&& $('li.dropdown.mega-dropdown').has(e.target).length === 0 
-		// 		&& $('.open').has(e.target).length === 0
-		// 	) {
-		// 		$('li.dropdown.mega-dropdown').removeClass('open');
-		// 	}
-		// });
+		function getAge(dateString) {
+			var today = new Date();
+			var birthDate = new Date(dateString);
+			var age = today.getFullYear() - birthDate.getFullYear();
+			var m = today.getMonth() - birthDate.getMonth();
+			if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+				age--;
+			}
+			return age;
+		}
+		$('.profile-age .age').text(getAge("1990/01/24"));
 	</script>
 </body>
 
