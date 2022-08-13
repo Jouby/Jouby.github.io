@@ -178,29 +178,6 @@ header {
 .dropdown-item.active {
     background-color: #e0e0e0;
 }
-.nav-item-mobile {
-    width: 130px;
-}
-.nav-item-mobile .dropdown-toggle {
-    width: 90px;
-}
-.dropdown-menu-mobile {
-    width: 130px;
-    min-width: 130px;
-}
-.nav-item-web {
-    width: 240px;
-}
-.nav-item-web .dropdown-toggle {
-    width: 205px;
-}
-.dropdown-menu-web {
-    width: 240px;
-    min-width: 240px;
-}
-.nav-link.nav-link-realisations {
-    width: 155px;
-}
 
 a.anchor {
     display: block;
