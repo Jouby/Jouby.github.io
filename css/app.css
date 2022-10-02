@@ -44,7 +44,7 @@ button:focus {
     padding-right: 4.7em;
     max-width: 250px;
     margin: auto;
-    background: #009ed8;
+    background: #48497d;
     border: none;
     border-radius: 5px;
     color: white !important;
@@ -71,7 +71,7 @@ button:focus {
     bottom: 0;
   }
   .button:hover {
-    background: #0079a5;
+    background: #2b2c4b;
   }
   .button:active,
   .button:focus {
