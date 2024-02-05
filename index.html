@@ -382,12 +382,12 @@
       const querySnapshot = await getDocs(collection(db, "work_experience"));
 
       const docs = querySnapshot.docs.sort((a, b) => {
-        const pA = a.data().tags.includes("Flutter");
-        const pB = b.data().tags.includes("Flutter");
+        const pA = a.data().priority;
+        const pB = b.data().priority;
 
-        if (pA && !pB) {
+        if (pA < pB) {
           return -1;
-        } else if (!pA && pB) {
+        } else if (pA > pB) {
           return 1;
         }
 
