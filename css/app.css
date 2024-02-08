@@ -92,6 +92,7 @@ button:focus {
 header {
 	width: 100%;
 	min-height: 100%;
+    background-size: cover;
 }
 .header-content {
 	padding: 20px 0px;
