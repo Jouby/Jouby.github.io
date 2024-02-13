@@ -259,7 +259,7 @@
       </div>
       <div class="copyright">Aurélien JOUBERT © <span class="date"></span></div>
     </footer>
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
 
@@ -363,7 +363,9 @@
         $("#primary-expertise-content .card-deck")
           .append(`<div class="card mb-4">
 				<div class="card-body">
-					<h4 class="card-title"><img height="150" class="img-fluid rounded" src="${url}" /></h4>
+					<h4 class="card-title"><img height="150" class="img-fluid rounded" src="${url}" alt="${
+          data.name
+        }"/></h4>
 					<h5 class="card-title">${data.name}</h5>
 					<p class="card-text">${data.description ?? ""}</p>
 				</div>
@@ -378,7 +380,9 @@
         const url = await getDownloadURL(ref(storage, data.image));
         $("#other-expertise-content .card-deck").append(`<div class="card mb-4">
 				<div class="card-body">
-					<h4 class="card-title"><img class="img-fluid rounded" src="${url}" /></h4>
+					<h4 class="card-title"><img class="img-fluid rounded" src="${url}" alt="${
+          data.name
+        }" /></h4>
 					<h5 class="card-title">${data.name}</h5>
 					<p class="card-text">${data.description ?? ""}
 					
