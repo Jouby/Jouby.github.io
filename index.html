@@ -1,9 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <title>Aurélien JOUBERT</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="./css/app.css" />
+    <meta
+      name="description"
+      content="Aurélien JOUBERT - Développeur Web et Mobile Freelance"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="icon" href="images/favicon.png" />
@@ -87,7 +92,11 @@
     <section id="profile-content" class="part">
       <div class="row">
         <div class="col-md-4">
-          <img class="profile-image" src="./images/me.jpg" />
+          <img
+            class="profile-image"
+            src="./images/me.jpg"
+            alt="profile image"
+          />
           <div class="row profile-icons">
             <div class="col-6 profile-age">
               <i class="fas fa-id-card-alt"></i> <span class="age"></span> ans
@@ -451,7 +460,7 @@
 				
 					</div>
 					<p class="card-text">${data.short_description}</p>
-					<img class="img-fluid rounded modal-link" src="${url}" />
+					<img class="img-fluid rounded modal-link" src="${url}" alt="${data.name}" />
 				</div>
 				<div class="card-footer text-muted ${urls.length == 0 ? "empty" : ""}">
 					${urlButtons}
@@ -479,7 +488,7 @@
 							</button>
 						</div>
 						<div class="modal-body">
-							<img class="img-fluid rounded" src="${url}" />
+							<img class="img-fluid rounded" src="${url}" alt="${data.name}" />
 							<p class="card-text">${converter.makeHtml(data.description)}</p>
 						</div>
 						<div class="modal-footer">${urlButtons}</div>
