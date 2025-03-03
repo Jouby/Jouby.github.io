@@ -359,7 +359,9 @@
       for (let index in primaryExpertises) {
         const doc = primaryExpertises[index];
         const data = doc.data();
-        const url = await getDownloadURL(ref(storage, data.image));
+        const url = await getDownloadURL(
+          ref(storage, data.image[0].downloadURL)
+        );
         $("#primary-expertise-content .card-deck")
           .append(`<div class="card mb-4">
 				<div class="card-body">
@@ -377,7 +379,9 @@
       for (let index in notPrimaryExpertises) {
         const doc = notPrimaryExpertises[index];
         const data = doc.data();
-        const url = await getDownloadURL(ref(storage, data.image));
+        const url = await getDownloadURL(
+          ref(storage, data.image[0].downloadURL)
+        );
         $("#other-expertise-content .card-deck").append(`<div class="card mb-4">
 				<div class="card-body">
 					<h4 class="card-title"><img class="img-fluid rounded" src="${url}" alt="${
@@ -450,7 +454,9 @@
                 })
                 .join(" ");
 
-        const url = await getDownloadURL(ref(storage, data.image));
+        const url = await getDownloadURL(
+          ref(storage, data.image[0].downloadURL)
+        );
         var converter = new showdown.Converter();
 
         $("#experiences .card-deck").append(`<div class="card mb-4">

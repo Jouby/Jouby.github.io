@@ -316,6 +316,17 @@ a.anchor {
     max-height: none;
     width: 100%;
 }
+.modal .img-fluid {
+    max-width: 500px;
+    max-height: none;
+    width: 100%;
+}
+.modal-body img:not(.img-fluid) {
+    max-width: 500px;
+    max-height: none;
+    width: 100%;
+    border: 1px solid #a0a0a0;
+}
 .figure-img {
     border: 1px solid #a0a0a0;
 }
