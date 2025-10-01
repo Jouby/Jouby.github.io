@@ -327,6 +327,9 @@ a.anchor {
     width: 100%;
     border: 1px solid #a0a0a0;
 }
+.modal-body p {
+    text-align: left;
+}
 .figure-img {
     border: 1px solid #a0a0a0;
 }
