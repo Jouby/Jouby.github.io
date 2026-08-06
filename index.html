@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/app.css" />
     <meta
       name="description"
-      content="Aurélien JOUBERT - Développeur Web et Mobile Freelance"
+      content="Aurélien JOUBERT - Développeur Fullstack Web et Mobile Freelance"
     />
     <meta name="google-site-verification" content="Vl2F9mwiPIRQ1pM1zw06MyH6tjqJTf273ibbU7xoXYg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,10 +22,10 @@
           <h1>AURÉLIEN JOUBERT</h1>
           <h2>Freelance</h2>
           <!-- <hr />
-          <h2>Développeur Web & Mobile</h2> -->
+          <h2>Développeur Fullstack Web & Mobile</h2> -->
         </div>
         <!-- <h2 class="sub-title">MOBILE &nbsp;| &nbsp;WEB&nbsp; | &nbsp;GAMEDEV&nbsp;</h2> -->
-        <h2 class="sub-title">DÉVELOPPEUR WEB & MOBILE</h2>
+        <h2 class="sub-title">DÉVELOPPEUR FULLSTACK WEB & MOBILE</h2>
       </div>
       <a href="#profile" class="scroll-down page-scroll"
         ><i class="fa fa-arrow-down"></i
@@ -113,14 +113,18 @@
         </div>
         <div class="col-md-8 profile-text">
           <p>
-            Développeur web depuis plus de 12 ans, j'ai réalisé de nombreux
-            projets pour le besoin de mes clients. Que ce soit seul ou en
-            équipe, j'ai travaillé pour de nombreux clients tels que Nestlé,
-            Renault, Hermès, Snowleader, FunBooker, etc...
+            Développeur Fullstack depuis <span class="experience"></span> ans,
+            j'ai réalisé de nombreux projets pour le besoin de mes clients. Que
+            ce soit seul ou en équipe, j'ai travaillé pour de nombreux clients
+            tels que Nestlé, Renault, Hermès, Snowleader, FunBooker, etc...
           </p>
           <p>
-            Je travaille sur le développement Flutter depuis plus de 4 ans,
-            notamment le développement d'applications mobile.
+            J'interviens aussi bien sur le front que sur le back : Flutter pour
+            les applications mobile (et web) depuis
+            <span class="flutter-experience"></span> ans, React pour les
+            interfaces web, et Node.js côté serveur — API, services et bases de
+            données. Cette polyvalence me permet de prendre en charge un projet
+            de bout en bout, de la conception à la mise en production.
           </p>
           <p>
             Je suis capable de comprendre vos besoins et je serai source de
@@ -141,7 +145,7 @@
             <h6>Développement</h6>
             <p>
               Création ou mise à jour d'applications web ou mobile développées
-              en Flutter
+              en Flutter, React et Node.js
             </p>
           </div>
         </div>
@@ -290,6 +294,8 @@
         return age;
       }
       $(".profile-age .age").text(getAge("1990/01/24"));
+      $(".profile-text .experience").text(getAge("2012/01/01"));
+      $(".profile-text .flutter-experience").text(getAge("2019/01/01"));
     </script>
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
