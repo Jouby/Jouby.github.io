@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "the_dead_masked_company.surprise_me",
+    "sha256_cert_fingerprints": ["35:C7:33:D9:E1:B6:51:22:57:2E:8B:5A:0A:EF:55:DA:26:7B:1D:83:8F:CD:3D:D5:F8:96:4A:BB:F9:B4:6F:2E"]
+  }
+}]
